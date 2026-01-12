@@ -14,14 +14,7 @@
     </cardsList>
   </div>
   <div class="whereUses">
-    <h2>Где можно использовать</h2>
-    <whereUse 
-    v-for="value in whereUses"
-    :title_use="value.title_use"
-    :text_use="value.text_use"
-    :buttons_use="value.buttons_use"
-    :key="value.whereUses">
-    </whereUse>
+    <whereUse></whereUse>
   </div>
 </template>
 
@@ -61,30 +54,6 @@
             index: '3',
             title: 'Выполняйте',
             text: 'Закрывайте задачи без хаоса.',
-          }
-        ],
-        whereUses: [
-          {
-            title_use: 'Учёба',
-            text_use: 'Помогает не пропускать дедлайны.',
-            buttons_use: [
-              'Домашка', 
-              'Экзамены', 
-              'Проекты', 
-              'Конспекты', 
-              'Курсы'
-            ]
-          },
-          {
-            title_use: 'Личные дела',
-            text_use: 'Упрощает бытовые и повседневные задачи.',
-            buttons_use: [
-              'Покупки', 
-              'Уборка', 
-              'Финансы', 
-              'Финансы', 
-              'Планы'
-            ]
           }
         ]
       }
